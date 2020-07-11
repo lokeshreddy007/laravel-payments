@@ -11,7 +11,20 @@ php artisan ui vue --auth
 
 ```bash
 php artisan make:model PaymentPlatform -m
-php artisan make:modelCurreny -m
+php artisan make:model Currency -m
 ```
 
-## Seedr
+## Seeder
+
+```bash
+php artisan make:seeder PaymentPlatsformTableSeeder
+php artisan make:seeder CurrenciesTableSeeder
+
+```
+
+## refresh
+
+```php
+
+php artisan migrate:fresh --seed
+```
